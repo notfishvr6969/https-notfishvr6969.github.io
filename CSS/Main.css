@@ -8,3 +8,20 @@
   font-size: 12px;
   content: "Free Nitro";
 }
+
+
+/* voice user animation */
+.voiceUser-3nRK-K {
+	animation: voiceUser 0.5s ease-in-out;
+}
+
+@keyframes voiceUser {
+	from {
+		transform: translateX(20px);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}
