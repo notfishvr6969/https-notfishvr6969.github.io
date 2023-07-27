@@ -1,0 +1,8 @@
+.bogoTrialBadge-2-iWF2 {
+  font-size: 0;
+}
+
+.bogoTrialBadge-2-iWF2::after {
+  font-size: 12px;
+  content: "Free Nitro";
+}
