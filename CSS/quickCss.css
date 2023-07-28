@@ -16,41 +16,71 @@
     border-radius: 15px;
 }
 
-/* Better Add Server BTN */
+/* Better Account Details Grid */
 
-[class*="root-"]:not(:has([class*="paymentModalContent"])) div:has(button:nth-child(4))>[class*="content-"] {
-    overflow: hidden overlay !important;
+.background-3d_SjE {
+    background-color: transparent;
+    padding: 0;
+}
+.fieldList-in8WkP {
+    background-color: transparent;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: min-content;
-    gap: 1em;
+    grid-gap: 5px;
 }
-
-[class*="root-"]:not(:has([class*="paymentModalContent"])) div:has(button:nth-child(4))>[class*="content-"]> :nth-child(1),
-[class*="root-"]:not(:has([class*="paymentModalContent"])) div:has(button:nth-child(4))>[class*="content-"]> :nth-child(2) {
-    grid-column: span 2;
-}
-
-[class*="root-"]:not(:has([class*="paymentModalContent"])) div:has(button:nth-child(4))>[class*="content-"] button>[class*="text-"] {
-    text-align: left;
-}
-
-[class*="root-"]:not(:has([class*="paymentModalContent"])) div:has(button:nth-child(4))>[class*="content-"] button> :last-child:is(img) {
-    display: none;
-}
-
-[class*="root-"]:not(:has([class*="paymentModalContent"])) div:has(button:nth-child(4))>[class*="footer-"] {
+.field-21XZwa {
+    width: 100%;
+    border-radius: 8px;
+    background-color: var(--background-primary);
+    max-height: unset;
+    flex-direction: column;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    padding: 15px;
+    margin-top: 0;
+    overflow-y: auto;
+    height: 120px;
+    margin-bottom: 0;
 }
-
-[class*="root-"]:not(:has([class*="paymentModalContent"])) div:has(button:nth-child(4))>[class*="footer-"]>h2 {
-    margin: 0;
-    font-size: 16px;
+.field-21XZwa .fieldButton-14lHvK {
+    background-color: var(--button-secondary-background);
+    border-radius: 6px;
+    -webkit-transition: background-color .17s ease,color .17s ease;
+    transition: background-color .17s ease,color .17s ease;
 }
-
+.field-21XZwa .fieldButton-14lHvK:hover {
+    background-color: var(--button-secondary-background-hover);
+}
+.field-21XZwa .fieldButton-14lHvK:hover > div {
+    background: none;
+}
+.field-21XZwa .fieldButton-14lHvK {
+    width: 100%;
+    margin-right: 0;
+    position: relative;
+}
+.field-21XZwa .fieldButtonList-28BYbB {
+    gap: 5px;
+}
+.field-21XZwa::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+}
+.field-21XZwa::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+.field-21XZwa::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-auto-thumb);
+    min-height: 40px;
+}
+.field-21XZwa::-webkit-scrollbar-track {
+    background-color: var(--scrollbar-auto-track);
+}
+.field-21XZwa::-webkit-scrollbar-thumb,
+.field-21XZwa::-webkit-scrollbar-track {
+    border: 4px solid transparent;
+    background-clip: padding-box;
+    border-radius: 8px;
+}
 
 /* Make pronouns stand out more */
 
