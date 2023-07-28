@@ -16,7 +16,7 @@
     border-radius: 15px;
 }
 
-/* Better Add Server BTN*/
+/* Better Add Server BTN */
 
 [class*="root-"]:not(:has([class*="paymentModalContent"])) div:has(button:nth-child(4))>[class*="content-"] {
     overflow: hidden overlay !important;
