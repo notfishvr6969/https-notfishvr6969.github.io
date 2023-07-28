@@ -16,24 +16,6 @@
     border-radius: 15px;
 }
 
-/* Better Banners Begone */
-
-.bannerSVGWrapper-2CLfzN{
-    display: none;
-}
-.avatarPositionPremiumBanner-2EAbSH {
-    top: -30px!important;
-}
-.avatarPositionNormal-2jWoC2 {
-    top: -30px!important;  
-}
-.avatarUploader-qEFQS2 {
-    top: -30px!important;   
-}
-.avatar-3mTjvZ {
-    top: 0px!important;
-}
-
 /* Make pronouns stand out more */
 
 [class*=pronouns] {
