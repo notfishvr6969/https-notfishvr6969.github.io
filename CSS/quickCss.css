@@ -1,16 +1,4 @@
-/* Free Nitro CSSS */
-
-.bogoTrialBadge-2-iWF2 {
-  font-size: 0;
-}
-
-.bogoTrialBadge-2-iWF2::after {
-  font-size: 12px;
-  content: "Free Nitro";
-}
-
-
-/* voice user animation */
+/* Blur Account Info */
 
 [class*="field"]:not(:first-child) > [class*="constrainedRow"] > div > div {
     filter: blur(5px);
@@ -20,22 +8,8 @@
     filter: none;
 }
 
-.voiceUser-3nRK-K {
-	animation: voiceUser 0.5s ease-in-out;
-}
-
-@keyframes voiceUser {
-	from {
-		transform: translateX(20px);
-		opacity: 0;
-	}
-	to {
-		transform: translateX(0px);
-		opacity: 1;
-	}
-}
-
 /* Colored context menus */
+
 .menu-2TXYjN { 
     background: linear-gradient(145deg, #2a2465 35%, #0a0818);
     border: 2px solid #493fb1;
