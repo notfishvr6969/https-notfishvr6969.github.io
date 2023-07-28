@@ -17,7 +17,7 @@
 }
 
 /* Make pronouns stand out more */
-
+/*
 [class*=pronouns] {
   color: var(--text-normal);
   font-size: 12px; font-weight: 800;
@@ -31,3 +31,5 @@
     0% {filter: hue-rotate(0deg);}
     100% {filter: hue-rotate(360deg);}
 }
+
+*/
