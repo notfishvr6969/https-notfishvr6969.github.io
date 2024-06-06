@@ -1,0 +1,86 @@
+/**
+* @name Better Quick Switcher
+* @author catpurrchino
+* @description Redesigned Quick Switcher for a more clean look
+* @version 1.5.1
+* @note You may redistribute this snippet as you like without attribution to the author
+* @source https://github.com/faf4a/snippets
+*/
+
+[class*=layer_]:has([class*=quickswitcher_]) {
+    top: 5rem;
+    justify-content: start;
+}
+
+[class*=quickswitcher_] {
+    padding: 12px;
+    border: 1px solid var(--bg-overlay-3, var(--background-modifier-accent-2));
+    background: var(--bg-overlay-3, var(--background-secondary-alt));
+    transition: all 0.2s ease-in-out;
+    box-sizing: initial;
+}
+
+[class*=quickswitcher_] [class*=scroller_] {
+    margin: 0;
+    border-radius: 0 0 4px 4px;
+    scrollbar-width: none;
+    border: 1px solid var(--background-modifier-accent-2);
+    padding: 7px !important;
+}
+
+[class*=quickswitcher_] input {
+    height: 50px;
+    text-align: center;
+    background-color: var(--background-secondary);
+    border: 1px solid var(--background-modifier-accent-2);
+    border-radius: 4px 4px 0 0;
+    transition: all 0.2s ease-in-out;
+}
+
+[class*=quickswitcher_] [class*=input_]:focus::placeholder {
+    visibility: hidden;
+}
+
+[class*=quickswitcher_]:has([class*=emptyState_]) input {
+    border-radius: 4px;
+}
+
+[class*=quickswitcher_] [class*=emptyStateNote_],
+[class*=emptyStateCTA_] [class*=anchor_] {
+    color: var(--text-normal);
+}
+
+[class*=quickswitcher_] [class*=content_] {
+    justify-content: space-evenly;
+}
+
+[class*=quickswitcher_] [class*=emptyState_] {
+    background: none;
+    padding-top: 50px;
+}
+
+[class*=quickswitcher_]:not(:has([class*=result_])) [class*=contentDefault_] [class*=header_] {
+    visibility: hidden;
+}
+
+[class*=quickswitcher_]:not(:has([class*=result_])) [class*=contentDefault_] [class*=header_]::after {
+    content: "No results found for given query";
+    visibility: visible;
+    position: absolute;
+    top: 7px;
+    right: 10rem;
+}
+
+[class*=quickswitcher_] [class*=protip_] {
+    display: none;
+}
+
+[class*=quickswitcher_] input:focus {
+    border: 1px solid var(--text-brand);
+    transition: border 0.3s ease-in-out;
+}
+
+[class*=backdrop_]:has(+ [class*=layer_] [class*=quickswitcher_]) {
+    transition: all 0.2s ease-in-out;
+    opacity: 0.5;
+}
