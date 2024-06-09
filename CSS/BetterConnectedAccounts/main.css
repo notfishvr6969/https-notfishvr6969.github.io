@@ -1,51 +1,21 @@
-:root {
-  --tiktok: #ff0050;
-  --instagram: #f09433;
-  --theme-name: "BetterConnectedAccounts";
-  --theme-version: "(0.4.1)";
-  --radius: 4px; /* if you dont want rounded corners change 4px to 0 */
+[class*="connectedAccountContainer_"] {
+    --CA-radius: 16px;
+    --CA-icon-color: white;
+    --CA-checkmark-color: rgba(0, 0, 0, 0.65);
+    --CA-background: var(--profile-gradient-secondary-color);
 }
-[class^=connectedAccountContainer] {  
-  border: none;
-  background: var(--color);
-  box-shadow: 0 0 10px 0 rgba(0,0,0,0.5) inset;
-  border-radius: var(--radius);
-  padding-top: 15px;
-  padding-bottom: 15px;
-  &:has([aria-label="Spotify"]) { --color: var(--spotify) }
-  &:has([aria-label="Twitch"]) { --color: var(--twitch) }
-  &:has([aria-label="YouTube"]) { --color: var(--youtube) }
-  &:has([aria-label="Reddit"]) { --color: var(--reddit) }
-  &:has([aria-label="PayPal"]) { --color: var(--paypall) }
-  &:has([aria-label="TikTok"]) { --color: var(--tiktok) }
-  &:has([aria-label="Steam"]) { --color: var(--steam) }
-  &:has([aria-label="Crunchyroll"]) { --color: var(--cruchyroll) }
-  &:has([aria-label="eBay"]) { --color: var(--ebay) }
-  &:has([aria-label="Xbox"]) { --color: var(--xbox) }
-  &:has([aria-label="Battle.net"]) { --color: var(--battlenet) }
-  &:has([aria-label="PlayStation Network"]) { --color: var(--playstation) }
-  &:has([aria-label="Epic Games"]) { --color: var(--epic-games) }
-  &:has([aria-label="GitHub"]) { --color: var(--github) }
-  &:has([aria-label="X"]) { --color: var(--twitter) }
-  &:has([aria-label="League of Legends"]) { --color: var(--lol) }
-  &:has([aria-label="Twitter"]) { --color: var(--twitter) }
-  &:has([aria-label="Instagram"]) { --color: var(--instagram) }
-  &:has([aria-label="Riot Games"]) { --color: var(--riot-games) }
-  &:has([aria-label="Skype"]) { --color: var(--skype) }
-  &:has([aria-label="Facebook"]) { --color: var(--facebook) }
-
-  /* turn the verified check black */
-  [class^=flowerStar_] path {
-    fill: rgb(0 0 0 / 1);
-  }
+[class*="connectedAccountContainer_"] {
+    --CA-radius: 16px;
+    --CA-icon-color: white;
+    --CA-checkmark-color: rgba(0, 0, 0, 0.65);
+    --CA-background: var(--profile-gradient-secondary-color);
 }
-[class^=connectedAccountOpenIcon],
-[class^=connectedAccountNameText],
-[class^=connectedAccountIcon] {
-  filter: drop-shadow(3px 2px 1px rgb(25 41 35 / 0.5));
-  color: white !important;
+[class*="connectedAccountContainer_"] {
+    border: none;
+    background: var(--CA-background);
+    border-radius: var(--CA-radius);
 }
-[aria-label="User Settings"] [class^=info] > :first-child::before { /* adds theme info to the bottom of options screen, feel free to remove */
-  all: inherit;
-  content: var(--theme-name) " " var(--theme-version);
-}
+[class*="connectedAccountContainer_"] [class*="connectedAccountOpenIcon_"],
+[class*="connectedAccountContainer_"] [class*="connectedAccountNameText_"] { color: var(--CA-icon-color); }
+[class*="connectedAccountContainer_"] [class*="flowerStar_"] path { fill: var(--CA-checkmark-color); }
+[class*="connectedAccountContainer_"] [class*="childContainer_"]>svg>path { fill: var(--CA-icon-color); }
