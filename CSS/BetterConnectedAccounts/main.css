@@ -1,7 +1,10 @@
 :root {
-  --radius: 4px;
+    --tiktok: #ff0050;
+    --instagram: #f09433;
+    --theme-name: "BetterConnectedAccounts";
+    --theme-version: "(0.4)";
+    --radius: 4px; /* if you dont want rounded corners change 4px to 0 */
 }
-
 .connectedAccountContainer__5972d:has([aria-label="Spotify"]) { --color: var(--spotify); }
 .connectedAccountContainer__5972d .flowerStar_fa5ad8 path { fill: rgb(0 0 0 / 1); }
 .connectedAccountContainer__5972d childContainer__3a40c > svg > path { fill: white; }
