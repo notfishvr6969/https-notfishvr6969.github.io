@@ -1,0 +1,16 @@
+/**
+    * @name Hidden Threads
+    * @author vortex_chaos.
+    * @version 1.0.0
+    * @description Make Threads hidden by default and slide down on hover
+   */
+  
+    .containerDefault_ae2ea4:hover + .container__342a0, .container__342a0:hover {
+        max-height: 1000px; /* Make the threads Slide down */
+        transition: max-height 1s ease; }
+      
+      .container__342a0 {
+        max-height: 0; /* Initially hide the threads by setting their max-height to 0 */
+        overflow: hidden; 
+        transition: max-height 0.25s ease; }
+          
